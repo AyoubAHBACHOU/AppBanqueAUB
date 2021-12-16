@@ -18,8 +18,8 @@ void banque::Client::afficher() const
 
 void banque::Client::ajouter_compte(Compte* c)
 {
-	bool notexist = (find(listeComptes.begin(), listeComptes.end(), c) == listeComptes.end());
-	if (notexist) listeComptes.push_back(c);
+	bool exist = (find(listeComptes.begin(), listeComptes.end(), c) == listeComptes.end());
+	if (exist) listeComptes.push_back(c);
 }
 
 banque::Client::~Client()

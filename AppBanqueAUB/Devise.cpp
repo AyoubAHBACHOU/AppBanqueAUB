@@ -28,7 +28,7 @@ Devise& banque::Devise::operator+(const Devise& d) const
 		delete D;
 	}
 	else 
-		val = d.valeur;
+	val = d.valeur;
 	E->valeur += val;
 	return *E;
 

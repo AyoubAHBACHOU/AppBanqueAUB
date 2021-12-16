@@ -11,7 +11,7 @@ banque::Dollar::Dollar(double val): Devise(val)
 {
 }
 
-banque::Dollar::Dollar(const Euro& e):Devise(e)
+banque::Dollar::Dollar(const Dollar& e):Devise(e)
 {
 }
 

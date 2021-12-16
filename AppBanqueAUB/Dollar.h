@@ -8,7 +8,7 @@ namespace banque {
         const static double ratioMad;
     public:
         Dollar(double val);
-        Dollar(const Euro& e);
+        Dollar(const Dollar& e);
         void afficher() const;
         Devise* copie() const override;
         Dollar* ConverToDollar()const override;
